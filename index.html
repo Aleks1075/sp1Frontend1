@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SP1 Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>SP1 Assignment</h1>
+    <button id="getAllCityInfoButton">Get All Danish cities</button>
+    <button id="getAllPersonsButton">Get All Persons</button>
+    <button id="getAllHobbiesButton">Get All Hobbies</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>
+        <label for="zipCodeInput">Zip Code:</label>
+        <input type="text" id="zipCodeInput">
+        <button id="getCityInfoByZipCodeButton">Get City Info</button>
+    </div>
+    <br>
+
+    <div>
+        <label for="personIdInput">Person ID:</label>
+        <input type="text" id="personIdInput">
+        <button id="getPersonByIdButton">Get Person</button>
+    </div>
+
+    <div>
+        <label for="phoneNumberInput">Phone Number:</label>
+        <input type="text" id="phoneNumberInput">
+        <button id="getPersonByPhoneButton">Get Person by Phone Number</button>
+    </div>
+
+    <br>
+
+    <div>
+        <label for="hobbyInput">Hobby Name:</label>
+        <input type="text" id="hobbyInput">
+        <button id="getPersonsByHobbyButton">Get Persons by Hobby</button>
+    </div>
+
+    <div>
+        <label for="cityInput">City (e.g., 2800 Lyngby):</label>
+        <input type="text" id="cityInput">
+        <button id="getPersonsByCityButton">Get Persons by City</button>
+    </div>
+
+    <div>
+        <label for="hobbyCountInput">Hobby Name:</label>
+        <input type="text" id="hobbyCountInput">
+        <button id="getHobbyCountButton">Get Hobby Count</button>
+    </div>
+
+    <div>
+        <h1>Add Person</h1>
+  <form id="add-person-form">
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+    <br>
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" required>
+    <br>
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" required>
+    <br>
+    <label for="age">Age:</label>
+    <input type="number" id="age" required>
+    <br>
+
+    <h3>Hobbies</h3>
+    <label for="hobbyName">Name:</label>
+    <input type="text" id="hobbyName" required>
+    <br>
+    <label for="hobbyWikiLink">Wiki Link:</label>
+    <input type="url" id="hobbyWikiLink" required>
+    <br>
+    <label for="hobbyCategory">Category:</label>
+    <input type="text" id="hobbyCategory" required>
+    <br>
+    <label for="hobbyType">Type:</label>
+    <input type="text" id="hobbyType" required>
+    <br>
+
+    <h3>Address</h3>
+    <label for="addressId">Street:</label>
+    <input type="text" id="addressId" required>
+    <br>
+    <label for="additionalInfo">Additional Info:</label>
+    <input type="text" id="additionalInfo" required>
+    <br>
+    <label for="street">Purpose:</label>
+    <input type="text" id="street" required>
+    <br>
+
+    <h3>City Info</h3>
+    <label for="zipCode">Zip Code:</label>
+    <input type="number" id="zipCode" required>
+    <br>
+    <label for="city">City:</label>
+    <input type="text" id="city" required>
+    <br>
+
+    <h3>Phones</h3>
+    <label for="phoneId">Phone number:</label>
+    <input type="text" id="phoneId" required>
+    <br>
+    <label for="descriptionPhone">Description:</label>
+    <input type="text" id="descriptionPhone" required>
+    <br>
+
+    <button type="submit">Add Person</button>
+  </form>
+</div>
+
+    <div id="content">
+        <p id="errorMessage"></p>
+        <!-- Table will be loaded here -->
+    </div>
+
+    <div>
+        <h1>Delete Person</h1>
+        <form id="delete-person-form">
+            <button id="delete-btn">Delete Person</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
